@@ -1,0 +1,106 @@
+/*Slideshow*/
+
+.container {max-width:100%}
+.main-page-wrapper {padding-top:0px}
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_pagination {
+    display: none !important;
+}
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev,
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-next {
+    display: none !important;
+}
+.wp-block-jetpack-slideshow,
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wp-block-jetpack-slideshow_button-pause {
+    display: none !important;
+}
+
+
+/*Heading*/
+.headpad {padding-top:20px}
+
+
+/*Owl*/
+
+/* 1. SLIDER CONTAINER */
+    .dynamic-woo-slider {
+        /* Respect parent container width */
+        width: 100%; 
+        max-width: 100%;
+        margin: 20px 0; /* Reduced top/bottom margin */
+        opacity: 0;
+        transition: opacity 0.5s;
+        box-sizing: border-box;
+    }
+    
+    /* 2. EQUAL HEIGHT SETUP */
+    .owl-stage { display: flex; }
+    .owl-item { display: flex; flex: 1 0 auto; }
+    
+    /* 3. CARD STYLING (Compact Version) */
+    .dynamic-slide-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid #eee; /* Lighter border */
+        padding: 10px; /* Reduced padding (was 15px) */
+        text-align: center;
+        border-radius: 6px;
+        background: #fff;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 4. IMAGE WRAPPER */
+    .slide-img-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 100%; /* Square Aspect Ratio */
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .slide-img-wrap img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+    }
+
+    /* 5. TEXT & BUTTONS (Smaller Fonts) */
+    .slide-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .dynamic-slide-item h3 {
+        font-size: 14px; /* Smaller title (was 16px) */
+        line-height: 1.3em;
+        margin: 0 0 8px 0;
+        color: #333;
+    }
+    .dynamic-price {
+        font-weight: bold;
+        color: #000;
+        font-size: 1em; /* Smaller price (was 1.1em) */
+        margin-top: auto; 
+        margin-bottom: 10px;
+        display: block;
+    }
+    .dynamic-btn {
+        display: block;
+        width: 100%;
+        padding: 8px 0; /* Thinner button */
+        background: #333;
+        color: #fff !important;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 13px; /* Smaller button text */
+        transition: background 0.3s;
+    }
+    .dynamic-btn:hover { background: #555; }
