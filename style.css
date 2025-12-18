@@ -15,7 +15,7 @@
     padding: 0 !important;
 }
 .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide figure {
-    alighn-items: stretch !important;
+    alighn-items: normal !important;
 }
 .wp-block-jetpack-slideshow_button-pause {
     display: none !important;
@@ -108,3 +108,4 @@
     }
 
     .dynamic-btn:hover { background: #555; }
+
